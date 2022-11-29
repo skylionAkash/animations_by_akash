@@ -1,0 +1,73 @@
+<html>
+<head>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .center_div{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #2f3640;
+        }
+        i{
+            color: white;
+        }
+        .pulse{
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            background-color: #44bd32;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+        .pulse::before{
+            content: "";
+            position: absolute;
+            width: calc(100% + 40px);
+            height: calc(100% + 40px);
+            border: 1.2px solid green;
+            border-radius: 50%;
+            animation: pulses 1.5s linear infinite;
+        }
+        .pulse::after{
+            content: "";
+            position: absolute;
+            width: calc(100% + 40px);
+            height: calc(100% + 40px);
+            border: 1.2px solid green;
+            border-radius: 50%;
+            animation: pulses 1.5s linear infinite;
+            animation-delay: 0.4s;
+        }
+        @keyframes pulses{
+            0%{
+                transform: scale(0.5);
+                opacity: 0;
+            }
+            50%{
+                transform: scale(1);
+                opacity: 1;
+            }
+            0%{
+                transform: scale(1.4);
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="center_div">
+        <div class="pulse">
+            <i class="fas fa-phone fa-3x"></i>
+        </div>
+    </div>
+    
+    
+</body>
+</html>

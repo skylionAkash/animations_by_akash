@@ -1,0 +1,85 @@
+<html>
+<head>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: 'Source Sans Pro', sans-serif;
+        }
+        .icon_bar{
+            position: fixed;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 10;
+        }
+        .icon_bar a{
+            text-decoration: none;
+            width: 210px;
+            color: #fff;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            padding: 5px;
+            font-size: 20px;
+            transform: translateX(-170px);
+            transition: 0.5s linear;
+        }
+        a i{
+            padding-left: 20px;
+            font-size: 30px;
+            animation: zoom 3s linear alternate-reverse infinite;
+        }
+        a:hover{
+            transform: translateX(0);
+        }
+        .facebook{
+            background: #3b5998;
+        }
+        .instagram{
+            background: #e4405f;
+        }
+        .twitter{
+            background: #00aced;
+        }
+        .linkedin{
+            background: #007785;
+        }
+        .youtube{
+            background: red;
+        }
+        @keyframes zoom{
+            from{
+                transform: scale(0.8);
+            }
+            to{
+                transform: scale(1);
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="icon_bar">
+        <a href="#" class="facebook">Click here to visit
+            <i class="fab fa-facebook-square"></i>
+        </a>
+        <a href="#" class="instagram">Click here to visit
+            <i class="fab fa-instagram"></i>
+        </a>
+        <a href="#" class="twitter">Click here to visit
+            <i class="fab fa-twitter-square"></i>
+        </a>
+        <a href="#" class="linkedin">Click here to visit
+            <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="#" class="youtube">Click here to visit
+            <i class="fab fa-youtube"></i>
+        </a>
+        
+    </div>
+    
+</body>
+</html>
